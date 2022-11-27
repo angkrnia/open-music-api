@@ -1,0 +1,34 @@
+{
+  "name": "openmusic_api_v3",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint . --fix",
+    "migrate": "node-pg-migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^7.0.0",
+    "@hapi/jwt": "^3.0.0",
+    "amqplib": "^0.10.3",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.1",
+    "joi": "^17.6.0",
+    "nanoid": "^3.1.20",
+    "node-pg-migrate": "^6.2.2",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "redis": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Consumer_OpenMusic",
+  "version": "3.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./consume.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src"
+  },
+  "keywords": [],
+  "author": "Xpaww",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "auto-bind": "^5.0.1",
+    "dotenv": "^16.0.2",
+    "nodemailer": "^6.7.8",
+    "pg": "^8.8.0",
+    "redis": "^4.3.1"
+  }
+}
