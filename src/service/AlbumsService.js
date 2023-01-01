@@ -180,7 +180,10 @@ class AlbumsService {
       if (!rowCount) {
         throw new NotFoundError('Cannot find album ID!');
       }
-      await this._cacheControl.set(`album:like:${albumId}`, JSON.stringify(rowCount));
+      await this._cacheControl.set(
+        `album:like:${albumId}`,
+        JSON.stringify(rowCount),
+      );
 
       return {
         count: rowCount,
@@ -190,7 +193,7 @@ class AlbumsService {
   }
 
   async uploadCover(file) {
-    const filename = `cover-${nanoid(12)}${file.hapi.filename}`;
+    const filename = `cover-${nanoid(5)}-${file.hapi.filename}`;
     const directory = `${this._coverUploadFolder}/${filename}`;
     const fileStream = fs.createWriteStream(directory);
 
